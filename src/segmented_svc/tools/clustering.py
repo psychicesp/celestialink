@@ -16,7 +16,7 @@ def get_cluster_centroids(
     labels = data[:, -1]
 
     num_clusters = len(np.unique(labels))
-    clustering_algo = KMeans(n_clusters=num_clusters)
+    clustering_algo = KMeans(n_clusters=num_clusters, n_init='auto')
 
     clustering_algo.fit(points)
 
