@@ -2,4 +2,5 @@
 
 # Boosting classification algorithms for mapping points in hyperspace
 
-My library of boosted classifiers, growing slowly.
+## SegmentedSVC
+This works by chopping up the space and training a different SVC per segment.  This performs much faster than using a simple SVC without significant accuracy loss.  The results may also be better than the simple SVC for certain data sets.
